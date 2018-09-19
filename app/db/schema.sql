@@ -1,0 +1,46 @@
+CREATE DATABASE friend_find_db;
+CREATE DATABASE friend_find_A_db;
+
+USE friend_find_db;
+USE friend_find_A_db;
+-- HAVENT CREATED THE TABLE YET
+
+DROP TABLE survey;
+
+CREATE TABLE friends (
+    id INT NOT NULL AUTO_INCREMENT,
+    scores CREATE TYPE (array),
+    
+);
+
+CREATE TABLE survey (
+    id INT NOT NULL AUTO_INCREMENT,
+    name VARCHAR(255) NOT NULL,
+    q1 INT NOT NULL,
+    q2 INT NOT NULL,
+    q3 INT NOT NULL,
+    q4 INT NOT NULL,
+    q5 INT NOT NULL,
+    q6 INT NOT NULL,
+    q7 INT NOT NULL,
+    q8 INT NOT NULL,
+    q9 INT NOT NULL,
+    q10 INT NOT NULL,
+    PRIMARY KEY(id)
+);
+CREATE TABLE survey (
+    id INT NOT NULL AUTO_INCREMENT,
+    name VARCHAR(255) NOT NULL,
+    q1 INT NOT NULL,
+    q2 INT NOT NULL,
+    q3 INT NOT NULL,
+    q4 INT NOT NULL,
+    q5 INT NOT NULL,
+    q6 INT NOT NULL,
+    q7 INT NOT NULL,
+    q8 INT NOT NULL,
+    q9 INT NOT NULL,
+    q10 INT NOT NULL,
+    total INT NOT NULL,
+    PRIMARY KEY(id)
+);
